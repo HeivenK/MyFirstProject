@@ -9,7 +9,7 @@ public class Main {
         while (!input.toLowerCase().equals("stop")){
             input = new Scanner(System.in).next();
             System.out.println(input);
-            System.out.println(" ");
+            System.out.println("");
         }
     }
 }
