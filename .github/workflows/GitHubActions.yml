@@ -1,13 +1,23 @@
 name: New Labeler
-on:
+
+on:  
   workflow_dispatch:
+    
+    inputs:
+    Vorname:
+      description: 'Vorname'
+      required: true
+    
+    Nachname:
+      description: 'Nachname'
+      required: false
 
 jobs:
-  label:
+  First Job:
 
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/labeler@v2
-        with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Welcome
+        run: echo "Hello ${{ github.event.inputs.Vorname }} ${{ github.event.inputs.Nachname }}"
+      
