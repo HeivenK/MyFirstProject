@@ -1,4 +1,4 @@
-name: New Labeler
+name: GitHub Actions
 
 on:  
   workflow_dispatch:
