@@ -4,13 +4,9 @@ on:
   workflow_dispatch:
     
     inputs:
-    Vorname:
+    name:
       description: 'Vorname'
       required: true
-    
-    Nachname:
-      description: 'Nachname'
-      required: false
 
 jobs:
   first:
@@ -19,5 +15,5 @@ jobs:
 
     steps:
       - name: Welcome
-        run: echo "Hello ${{ github.event.inputs.Vorname }} ${{ github.event.inputs.Nachname }}"
+        run: echo "Hello ${{ github.event.inputs.name }}"
       
