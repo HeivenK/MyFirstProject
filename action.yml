@@ -1,4 +1,4 @@
-name: 'CI Email Notification'
+name: 'Email'
 description: 'Send email via SMTP on failed CI check_suite'
 runs:
   using: 'docker'
