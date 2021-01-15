@@ -9,7 +9,7 @@ jobs:
    
     steps:     
       - name: test
-        uses: HeivenK/action-send-mail@v1.3.0
+        uses: HeivenK/action-send-mail@v2
         with:
           server_address: smtp.gmail.com
           port: 465
