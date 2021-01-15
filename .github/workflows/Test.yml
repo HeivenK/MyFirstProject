@@ -12,10 +12,10 @@ jobs:
         uses: HeivenK/action-send-mail@v2
         with:
           server_address: smtp.gmail.com
-          port: 465
+          server_port: 465
           username: heivenkifle
           password: ${{ secrets.GMAIL_PASS }}
           subjekt: GitHub
           body: Test
           to: heivenkifle@yahoo.com
-          from: me
+          from: heivenkifle@gmail.com
