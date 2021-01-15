@@ -17,8 +17,8 @@ on:
         required: true
         
       ort:
-      description: 'Wohnort'
-      required: false
+        description: 'Wohnort'
+        required: false
       
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
