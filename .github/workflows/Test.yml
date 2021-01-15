@@ -9,7 +9,7 @@ jobs:
    
     steps:     
       - name: test
-        uses: heivenk/myfirstprojekt@master
+        uses: HeivenK/MyFirstProject@master
         with:
           server_address: smtp.gmail.com
           server_port: 465
