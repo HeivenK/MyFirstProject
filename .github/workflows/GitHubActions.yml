@@ -20,9 +20,17 @@ jobs:
         run: | 
           echo "All"
           echo "${{ steps.files.outputs.all }}"
-          echo "Modified"
-          echo "${{ steps.files.outputs.modified }}"
+          
+          echo "Added"
+          echo "${{ steps.files.outputs.added }}"
+          
+          echo "Deleted"
+          echo "${{ steps.files.outputs.deleted }}"
+          
           echo "Renamed"
           echo "${{ steps.files.outputs.renamed }}"
           
+          echo "Modified"
+          echo "${{ steps.files.outputs.modified }}"
+
         
