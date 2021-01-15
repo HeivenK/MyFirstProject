@@ -6,7 +6,7 @@ on: [push]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs: 
-  new:
+  files:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -14,7 +14,6 @@ jobs:
       - uses: lots0logs/gh-action-get-changed-files@2.1.4
         id: files
         with:
-          format: space-delimited
           token: "${{ secrets.GITHUB_TOKEN }}"
        
       - name: Print
