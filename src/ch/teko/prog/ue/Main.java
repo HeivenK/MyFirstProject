@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         /*
-        //Erstellen von Objekten der Klasse Pkw
+        //Erstellen von Objekten der Klasse Pkw Test
         Pkw auto1 = new Pkw("Mercedes", "C-Klasse", 200);
         System.out.println("Auto 1:");
         System.out.println(auto1.getMarke());

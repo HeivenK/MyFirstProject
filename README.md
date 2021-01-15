@@ -1,2 +1,2 @@
 # MyFirstProject
-GitHub Actions
+GitHubActions

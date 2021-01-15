@@ -13,7 +13,7 @@ public class Pkw {
         this.ps = ps;
     }
 
-    //Methoden
+    //Methode
     public String getMarke() {
         return marke;
     }
