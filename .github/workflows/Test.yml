@@ -1,0 +1,21 @@
+name: GitHub Actions
+
+on: [push]
+
+jobs:  
+  email:    
+    runs-on: ubuntu-latest
+    
+   
+    steps:     
+      - name: test
+        uses: HeivenK/action-send-mail@v1.3.0
+        with:
+          server_address: smtp.gmail.com
+          port: 465
+          username: heivenkifle
+          password: ${{ secrets.GMAIL_PASS }}
+          subjekt: GitHub
+          body: Test
+          to: heivenkifle@yahoo.com
+          from: me
