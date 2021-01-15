@@ -17,4 +17,12 @@ jobs:
           token: "${{ secrets.GITHUB_TOKEN }}"
        
       - name: Print
-        run: echo "${{ steps.files.outputs.all }}"
+        run: | 
+          echo "All"
+          echo "${{ steps.files.outputs.all }}"
+          echo "Modified"
+          echo "${{ steps.files.outputs.modified }}"
+          echo "Renamed"
+          echo "${{ steps.files.outputs.renamed }}"
+          
+        
