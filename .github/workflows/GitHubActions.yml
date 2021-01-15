@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v2.1.0
+      - uses: HeivenK/MyFirstProject@master
         id: files
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
