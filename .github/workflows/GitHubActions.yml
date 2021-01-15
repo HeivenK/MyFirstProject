@@ -6,11 +6,15 @@ on: [push]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs: 
-  hello:
+  new:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Runs a single command using the runners shell   
-      - name: hello
-        run: echo "Hello World"
+      - uses: actions/checkout@v2.1.0
+        id: files
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+       
+      - name: Print
+        run: echo "${{ steps.files.outputs.all }}"
